@@ -1,0 +1,20 @@
+<!--pages/test/test.wxml-->
+<view class="uplist-panel">
+<view class="item {{thepage==0?'active':''}}" bindtap="clickpage" data-page="0">
+页面一
+</view>
+<view class="item {{thepage==1?'active':''}}" bindtap="clickpage" data-page="1">
+页面二
+</view>
+<view class="item {{thepage==2?'active':''}}" bindtap="clickpage" data-page="2">
+页面三
+</view>
+</view>
+
+<swiper class="swiper" bindchange="slidepage" current="{{thepage}}"> 
+<block wx:for="{{[1,2,3]}}">
+<swiper-item class="page-item"  >
+    <text class="content">{{item}}</text>
+</swiper-item>
+</block>
+</swiper>

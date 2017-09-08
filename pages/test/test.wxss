@@ -1,0 +1,41 @@
+/* pages/test/test.wxss */
+.uplist-panel{
+  width:100%;
+  height:80rpx;
+  border-bottom:1rpx solid #eaeaea;
+  position:fixed;
+  top:0;
+  display:flex;
+  flex-direction: row;
+}
+
+.uplist-panel .item{
+  width:33%;
+  height:100%;
+  text-align: center;
+  line-height:80rpx;
+  font-size:30rpx;
+  color:#252525;
+}
+.uplist-panel .item.active{
+  color:#cc0000;
+  border-bottom:1rpx solid #cc0000;
+}
+
+.swiper{
+  width:100%;
+  height:800rpx;
+  margin-top:80rpx;
+}
+.page-item{
+  width:100%;
+  height:100%;
+  font-size:70rpx;
+  color:#000;
+  text-align: center;
+}
+
+.content{
+  line-height:400rpx;font-weight:bold;font-size:70rpx;color:#DDF0ED;
+}
+
